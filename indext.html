@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Movie Search</title>
+<link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a80ab9a2ea.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+
+  <h1>🎬 Movie Search</h1>
+  <ul class="nav__link--list">
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">About</a>
+        </li>
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">Contact</a>
+        </li>
+      </ul>
+
+   <div class="search-box">
+    <input 
+      type="text" 
+      id="searchInput" 
+      placeholder="Search for a movie..."
+    >
+    <button onclick="searchMovie()">Search</button>
+  </div>
+
+  <div id="movies" class="movies">
+
+  <script src="script.js"></script>
+
+   <div class="modal">
+      <div class="modal__half modal__about">
+        <h3 class="modal__title modal__title--about">Here's about the website.</h3>
+        <h4 class="modal__sub-title modal__sub-title--about">This for you.</h4>
+        <p class="modal__para">
+          This website was made so <b> that you can find</b> movies that fit what you are looking for!! 
+        </p>
+        
+      </div>
+      <div class="modal__half modal__contact">
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+        <h3 class="modal__title modal__title--contact">
+          Have any Questions, concerns, or recommendations 
+        </h3>
+        <h3 class="modal__sub-title modal__sub-title--contact">
+          Call us at 000-000-0000 or email us at Moviesearch@gmail.com
+        </h3>
+      </div>
+    </div>
 </body>
 </html>
